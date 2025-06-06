@@ -1,0 +1,20 @@
+{
+    "name": "SpaceWebDev - CSS Project Template",
+    "short_name": "SpaceWebDev - CSS Project Template",
+    "icons": [
+        {
+            "src": "assets/img/icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/img/icons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#161734",
+    "background_color": "#000244",
+    "display": "fullscreen",
+    "orientation": "any"
+}

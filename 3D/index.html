@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>CSS - Translate3d</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+  <link href="favicon.ico" rel="shortcut icon" sizes="16x16 32x32" type="image/vnd.microsoft.icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#161734">
+
+  <link rel="stylesheet" href="css/main-styles.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+</head>
+<body class="no-js">
+<!-- Header -->
+<header class="page-header">
+  <div class="page-header__wrap">
+    <div class="page-header__main-logo main-logo">
+      <a class="main-logo__link" href="https://www.spacewebdev.com/" title="Логотип" target="_blank">
+        <svg class="main-logo-svg" width="120" height="120">
+          <use xlink:href="img/svg/sprite.svg#sprite-main-logo"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- Main content -->
+<main class="page-main page-main--index">
+  <div class="page-main__wrapper">
+    <section class="main-cover main-cover--hidden">
+      <!-- Board -->
+      <div class="main-cover__board-pos">
+        <div class="main-cover__wrap">
+          <!-- Slider Container -->
+          <div class="main-cover__slider swiper-container">
+            <!-- Slider Wrapper -->
+            <div class="main-cover__slider-wrap swiper-wrapper">
+
+              <!-- Slide - Transform: Translate3d(); -->
+              <div class="swiper-slide">
+                <h2 class="prop-title">
+                  transform: translate3d()
+                </h2>
+
+                <div class="smile-wrap smile-space-style">
+                  <div class="smile smile--red" data-animated>
+                    <svg class="smile__svg" width="200" height="200">
+                      <use xlink:href="img/svg/sprite.svg#sprite-smile"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="smile3d">
+                  <div class="smile3d__wrap smile-space-style">
+                    <img class="coord-sys-3d" src="img/svg/coords-sys-3d-empty.svg" alt="3D Coordinate System"/>
+                    <div class="smile smile--red" data-animated>
+                      <svg class="smile__svg" width="200" height="200">
+                        <use xlink:href="img/svg/sprite.svg#sprite-smile"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Slider Buttons -->
+            <button class="slider-btn slider-btn--next swiper-button-disabled" type="button">
+              <svg class="slider-btn__svg" width="54" height="51">
+                <use xlink:href="img/svg/sprite.svg#sprite-arrow"></use>
+              </svg>
+            </button>
+            <button class="slider-btn slider-btn--prev swiper-button-disabled" type="button">
+              <svg class="slider-btn__svg" width="51" height="51">
+                <use xlink:href="img/svg/sprite.svg#sprite-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Control buttons -->
+        <div class="main-cover__controls controls">
+          <div class="controls__wrap">
+            <button class="controls__btn controls__btn--play" type="button" disabled>
+              <svg class="controls__svg" width="52" height="58">
+                <use xlink:href="img/svg/sprite.svg#sprite-play-icon"></use>
+              </svg>
+            </button>
+            <button class="controls__btn controls__btn--reset" type="button" disabled>
+              <svg class="controls__svg" width="68" height="68">
+                <use xlink:href="img/svg/sprite.svg#sprite-reset-icon"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="page-footer">
+  <div class="page-footer__wrap">
+    <div class="page-footer__container container-fluid">
+      <div class="page-footer__line page-footer__line--left"></div>
+      <div class="page-footer__copyrights copyrights">
+        <p class="copyrights__text">@ 2019 Roman Trukhtanov</p>
+      </div>
+      <div class="page-footer__line page-footer__line--right"></div>
+    </div>
+  </div>
+</footer>
+<!-- Background -->
+<div class="background-effects">
+  <canvas class="background-effects__canvas"></canvas>
+  <canvas class="background-effects__canvas"></canvas>
+</div>
+<!-- Scripts -->
+<script src="js/swiper.min.js"></script>
+<script src="js/controller.min.js"></script>
+</body>
+</html>

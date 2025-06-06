@@ -1,0 +1,34 @@
+.smile {
+  position: absolute;
+  left: calc(50% - 125px);
+  top: calc(50% - 125px);
+  z-index: 25;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  transform: scale(1.5);
+  animation-duration: 4s;
+  animation-name: rotate-smile;
+}
+
+.smile--red {
+  background-color: #d73a46;
+}
+
+.smile.is-animated {
+  animation-name: move-smile;
+  animation-duration: 2s;
+}
+
+@keyframes move-smile {
+  to {
+    transform: translate(75%, -40%) scale(1.2) rotate(35deg);
+  }
+}
+
+@keyframes rotate-smile {
+  to {
+    transform: scale(1.5) rotate(360deg);
+    background-color: #5e91ff;
+  }
+}

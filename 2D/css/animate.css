@@ -1,0 +1,70 @@
+.smile {
+  position: absolute;
+  left: calc(50% - 125px);
+  top: calc(50% - 125px);
+  z-index: 25;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.smile--red {
+  background-color: #d73a46;
+}
+
+.smile:hover {
+  background-color: #5e91ff;
+  transition-delay: 0s;
+}
+
+.smile.is-animated {
+  transform: translateZ(100px);
+  transition: transform 1s ease;
+}
+
+/*should be added to container with .smile*/
+.smile--linear {
+  transition-timing-function: linear;
+/*  alternative  */
+/*  transition-timing-function: cubic-bezier(0.0, 0.0, 1.0, 1.0);*/
+}
+
+.smile--ease {
+  transition-timing-function: ease;
+  /*transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 0.1);*/
+}
+
+.smile--ease-in {
+  transition-timing-function: ease-in;
+  /*transition-timing-function: cubic-bezier(0.42, 0.0, 1.0, 1.0);*/
+}
+
+.smile--ease-out {
+  transition-timing-function: ease-out;
+  /*transition-timing-function: cubic-bezier(0.0, 0.0, 0.58, 1.0);*/
+}
+
+.smile--ease-in-out {
+  transition-timing-function: ease-in-out;
+  /*transition-timing-function: cubic-bezier(0.42, 0.0, 0.58, 1.0);*/
+}
+
+.smile--steps-start {
+  /* starts in the beginning of the timing section */
+  transition-timing-function: steps(4, start);
+}
+
+.smile--steps-end {
+  /* starts in the end of the timing section */
+  transition-timing-function: steps(4, end);
+}
+
+.smile--step-start {
+  /* steps(1, start) */
+  transition-timing-function: step-start;
+}
+
+.smile--step-end {
+  /* steps(1, end) */
+  transition-timing-function: step-end;
+}
